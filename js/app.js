@@ -4,8 +4,6 @@ var contador = 1;
 
 function main(){
 	$('.menu-bar').click(function(){
-		// $('nav').toggle();
-
 		if(contador == 1){
 			$('.menu').animate({
 				left: '0'

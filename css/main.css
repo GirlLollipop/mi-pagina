@@ -127,7 +127,7 @@ content: "",
 
 .contact {
  width: 18%;
- height: 200px;
+ height: auto;
  display: inline-block;
 }
 
@@ -143,7 +143,10 @@ content: "",
  width: 100%;
  height: 400px;
  background-image: url("../assets/images/portada.png");
- background-size: cover;
+ -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
  }
 
 .footer {
@@ -201,10 +204,9 @@ content: "",
 
 @media only screen and (max-width:800px) {
 .menu{
-
   background-color: #0d0d0d;
   width: 80%;
-  height: 100%;
+  height: 300px;
   left: -100%;
   margin:0;
   position: fixed;
@@ -228,12 +230,35 @@ header {
 }
 
 .coverpage {
-  width: 100%;
+
+  max-width: 100%;
   background-size: cover;
 }
 
 .info, .contact, .card-a, .card-b, .card-c, footer {
   width: 100%;
   height: 100%;
+}
+
+img {
+  height: auto;
+  margin-top: 20px;
+}
+
+.cards {
+  margin-top: 170px;
+}
+
+.contact {
+  width: 30%;
+  margin-top: 20px;
+}
+
+.footer {
+  margin-top: 90px;
+}
+
+.contents {
+  margin-top: 30px;
 }
 }
