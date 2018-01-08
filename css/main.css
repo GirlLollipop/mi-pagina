@@ -1,0 +1,95 @@
+*{
+  /*el tamaño de cada caja va a tomar el borde*/
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  margin: 2px solid black;
+}
+.container {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.row:before, .row:after{
+/*agrega un espacio en blanco antes y después de cada row*/
+content: "",
+  /*puede ser display table o dispaly block*/
+  display: table;
+  /*limpia el row al principio y al final*/
+  clear: both;
+}
+
+
+.cards {
+ width: 83.32%;
+ height: 300px;
+ background: lightpink;
+ display: inline-block;
+ margin-left: 8.33%;
+ margin-right: 8.33%;
+}
+
+.card-a {
+ width: 33%;
+ height: 200px;
+ background: pink;
+ display: inline-block;
+}
+
+.card-b {
+ width: 33%;
+ height: 200px;
+ background: pink;
+ display: inline-block;
+}
+
+.card-c {
+ width: 33%;
+ height: 200px;
+ background: pink;
+ display: inline-block;
+}
+
+.contact {
+ width: 19%;
+ height: 200px;
+ background: blue;
+ display: inline-block;
+}
+
+.contents {
+ width: 83.32%;
+ height: 300px;
+ background: lightblue;
+ margin-left: 8.33%;
+ margin-right: 8.33%;
+ }
+
+.coverpage {
+ width: 100%;
+ height: 400px;
+ background: purple;
+}
+
+.footer {
+ width: 100%;
+ height: 60px;
+ background: yellow;
+}
+
+.header {
+ width: 100%;
+ height: 80px;
+ background: #34eaa9;
+}
+
+.info {
+ width: 80%;
+ height: 200px;
+ background: blue;
+ display: inline-block;
+}
